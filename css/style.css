@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F3EF;
 }
 
 .logo{
@@ -29,7 +30,7 @@ ul{
 
 .menu{
     width: 59%;
-    margin: 0px;
+    margin-top: 10px;
     
 }
 
@@ -48,25 +49,25 @@ li{
 hr{
     border: 0.3px solid rgb(216, 216, 216);
     width: 98%;
-}
-header{
-    padding: 0px;
-    margin: 2%;
+    margin: 0;
 }
 
 .margin{
-    margin: 3%;
+    margin:0 8%;
+}
+
+header{
+    margin-top: 90%;
 }
 
 .intro{
     width:50%;
-    float:left;
     
 }
 
 .personalImg{
-    /* width:46%; */
-    width: 700px;
+    width:46%;
+    /* width: 700px; */
     margin:0 auto;
     
 }
@@ -76,16 +77,19 @@ header{
     position: static;
     float: right;
     margin-right: 30%;
+    /* display: block; */
 }
 
 h1{
     font-size: 60px;
-    line-height: 20px;
+    width: 75%;
+    margin-bottom: 20px;
 }
 
 p{
     font-size: 20px;
     line-height: 30px;
+    width: 80%;
 }
 
 button{
@@ -122,14 +126,15 @@ footer{
     margin-left: 3%;
 }
 
-.mySkills{
-
+.sectionTitle{
+    margin-left: 1%;
 }
 
 .flexContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skill{
@@ -139,9 +144,7 @@ footer{
     padding: 20px 0;
 }
 
-.sectionTitle{
 
-}
 
 .workGrid{
     display: grid;
@@ -178,6 +181,10 @@ footer{
 
 .caseImage{
     grid-area: caseImage;
+    
+}
+
+.imgCase{
 }
 
 .caseTitle{
@@ -196,7 +203,61 @@ footer{
 
 }
 
-@media only screen and (max-width: 600)
-{
-    
+.shazaImgMobile{
+    display: none;
 }
+
+@media only screen and (max-width: 700px)
+{
+    .flexContainer{
+        flex-direction: column;
+        
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .shazaImg{
+        display: none;
+        
+    }
+
+    .shazaImgMobile{
+        display: inline-block;
+        width: 60%;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .intro{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1310px)
+{
+    h1{
+        /* margin-top: 10px; */
+        font-size: 24px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .pIntro{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    button{
+        padding: 15px;
+    }
+
+}
+
