@@ -121,3 +121,38 @@ footer{
 .contactInfo{
     margin-left: 3%;
 }
+
+.mySkills{
+
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skill{
+    width: 33%;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sectionTitle{
+
+}
+
+.workGrid{
+    display: grid;
+    grid-column: 1 / 1;
+    grid-template-areas: 'caseStudy1 caseStudy2';
+}
+
+.caseStudy1{
+    grid-area: caseStudy1;
+}
+
+.caseStudy2{
+    grid-area: caseStudy2;
+}
