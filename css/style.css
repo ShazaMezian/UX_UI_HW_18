@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 40%;
+    display: inline-block;
+    margin: 0px;
+}
+
+.imgLogo{
+    width:50%;
+    padding: 1%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    width: 50%;
+    /* margin-left: auto; */
+    
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu{
+    width: 59%;
+    margin: 0px;
+    
+}
+
+ul{
+    float:right;
+}
+
+.menu ul li{
+    float:right;   
+}
+
+li{
+    padding: 15px;
+}
+
+hr{
+    border: 0.3px solid rgb(216, 216, 216);
+    width: 98%;
+}
+header{
+    padding: 0px;
+    margin: 2%;
+}
+
+.margin{
+    margin: 3%;
+}
+
+.intro{
+    width:50%;
+    float:left;
+    
+}
+
+.personalImg{
+    /* width:46%; */
+    width: 700px;
+    margin:0 auto;
+    
+}
+
+.shazaImg{
+    width: 50%;
+    position: static;
+    float: right;
+    margin-right: 30%;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 20px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+button{
+    border: 0px solid;
+    padding: 20px;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    font-size: 16px;
+}
+
+footer{
+    background-color: rgb(168, 168, 168);
+    height: 400px;
+}
+
+.connectTitle{
+    margin-top: 6%;
+    margin-left: 3%;
+    display: inline-block;
+
+}
+
+.connect{
+   
+    display: block;
+}
+
+.connectIcon{
+    width: 20px;
+    vertical-align:text-top;
+}
+
+.contactInfo{
+    margin-left: 3%;
+}
