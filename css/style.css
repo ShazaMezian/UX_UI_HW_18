@@ -52,12 +52,8 @@ hr{
     margin: 0;
 }
 
-.margin{
-    margin:0 8%;
-}
-
 header{
-    margin-top: 90%;
+    margin:3% 8%;
 }
 
 .intro{
@@ -73,10 +69,10 @@ header{
 }
 
 .shazaImg{
-    width: 50%;
-    position: static;
-    float: right;
-    margin-right: 30%;
+    /* width: 50%; */
+    /* position: static; */
+    /* float: right; */
+    /* margin-right: 30%; */
     /* display: block; */
 }
 
@@ -207,6 +203,21 @@ footer{
     display: none;
 }
 
+.skillIcon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    width: 40%;
+}
+
+section{
+    margin: 3% 8%;
+}
+
 @media only screen and (max-width: 700px)
 {
     .flexContainer{
@@ -259,5 +270,10 @@ footer{
         padding: 15px;
     }
 
+    .shazaImg{
+        width: 70%;
+        margin-left: 10%;
+        
+    }
 }
 
