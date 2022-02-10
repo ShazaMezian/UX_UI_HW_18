@@ -130,7 +130,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .skill{
@@ -145,7 +145,7 @@ footer{
 .workGrid{
     display: grid;
     grid-template-columns: 2;
-    grid-template-areas: 'empty caseStudy1 caseStudy2 empty';
+    grid-template-areas: 'caseStudy1 caseStudy2';
     margin:0px 25%;
     /* text-align: center; */
 }
@@ -155,8 +155,14 @@ footer{
     grid-row: 1;
     grid-column: 1;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'caseIntro caseImage';
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-template-rows: 300px;
+  grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "title image"
+    "type image"
+    "view image";
     margin-top: 10%;
 }
 
@@ -172,31 +178,37 @@ footer{
 
 .caseIntro{
     grid-area: caseIntro;
+
     
 }
 
 .caseImage{
     grid-area: caseImage;
-    
 }
 
+
 .imgCase{
+    /* padding-right: 30%; */
+    max-width: 100%;
 }
 
 .caseTitle{
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 15%;
     margin-bottom: 0px;
     line-height: 40px;
+    padding: 0;
+    grid-area: caseTitle;
 }
 
 .caseType{
-    margin: 10px auto;
+    margin-top: 10px;
+    grid-area: caseType;
 }
 
 .btnView{
     padding: 10px 30px;
-
+    grid-area: btnView;
 }
 
 .shazaImgMobile{
@@ -211,11 +223,15 @@ footer{
 }
 
 .icon{
-    width: 40%;
+    width: 30%;
+}
+
+.mountainIcon{
+    width: 70%;
 }
 
 section{
-    margin: 3% 8%;
+    margin: 8% 8%;
 }
 
 @media only screen and (max-width: 700px)
