@@ -82,7 +82,7 @@ h1{
     margin-bottom: 20px;
 }
 
-p{
+.pIntro{
     font-size: 20px;
     line-height: 30px;
     width: 80%;
@@ -144,7 +144,8 @@ footer{
 
 .workGrid{
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 'caseStudy1 caseStudy2';
     margin:0px 25%;
     /* text-align: center; */
@@ -155,14 +156,12 @@ footer{
     grid-row: 1;
     grid-column: 1;
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
-    grid-template-rows: 300px;
-  grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "title image"
-    "type image"
-    "view image";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    
+     /*grid-template-columns: subgrid;
+    grid-template-rows: subgrid;*/
+    grid-template-areas: 'caseIntro caseImage'; 
     margin-top: 10%;
 }
 
@@ -172,8 +171,9 @@ footer{
     grid-column: 1;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
     grid-template-areas: 'caseIntro caseImage';
-    margin-top: 10%;
+    margin-top: 18%;
 }
 
 .caseIntro{
@@ -192,6 +192,10 @@ footer{
     max-width: 100%;
 }
 
+.case2{
+    margin-top: 10%;
+}
+
 .caseTitle{
     font-size: 40px;
     margin-top: 15%;
@@ -199,11 +203,14 @@ footer{
     line-height: 40px;
     padding: 0;
     grid-area: caseTitle;
+    width: 100;
 }
 
 .caseType{
     margin-top: 10px;
     grid-area: caseType;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .btnView{
@@ -241,7 +248,9 @@ section{
         
     }
 
-    
+    .workGrid{
+        margin:0;
+    }
 
 
 }
@@ -255,7 +264,7 @@ section{
 
     .shazaImgMobile{
         display: inline-block;
-        width: 60%;
+        width: 40%;
     }
     h1{
         font-size: 24px;
@@ -264,7 +273,10 @@ section{
     }
     .intro{
         text-align: center;
+        width: 100%;
     }
+
+    
 
 }
 
@@ -291,5 +303,36 @@ section{
         margin-left: 10%;
         
     }
+
+    
+    .caseStudy1{
+        grid-template-rows:270px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "caseImage"
+        "caseIntro";
+        margin-top: 10%;
+
+    }
+
+    .caseStudy2{
+        grid-template-rows:220px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "caseImage"
+        "caseIntro";
+        margin-top: 0;
+
+    }
+
+    .imgCase{
+        width: 70%;
+    }
+
+    p{
+        width:100%;
+    }
+
+
 }
 
